@@ -20,9 +20,89 @@
     font-size: 16px;
     font-family: var(--JosefinSans);
 }
+
+main{
+    display: flex;
+    height: 97vh;
+}
+
+#logo{
+    width: 160px;
+    margin-bottom: 125px;
+}
+.comming-soon-img{
+    width: 45%;
+    height: 97vh;
+    background-image: url(/assets/images/hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.comming-soon-text{
+    width: 55%;
+    background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%)), url(/assets/images/bg-pattern-desktop.svg);
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 150px 0;
+
+}
+.comming-soon-text span{
+    font-size: 4em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    color: var(--Desaturated-Red);
+}
+.comming-soon-text h1{
+    font-size: 4em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+.comming-soon-text p{
+    font-size: 1.1em;
+    line-height: 30px;
+    color: var(--Desaturated-Red);
+    margin: 25px 0;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
+form{
+    display: flex;
+}
+input[type=email]{
+    width: 100%;
+    border: solid 1px var(--Desaturated-Red);
+    border-right: none;
+    padding: 20px 40px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    background-color: transparent;
+}
+input[type=email]:focus{
+    border: solid 2px var(--Soft-Red);
+}
+button[type=submit]{
+    width: 110px;
+    position: relative;
+    left: -30px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding-left: 50px;
+    box-shadow:  hsl(0, 36%, 70%) 0 2px 10px ;  
+}
+input[type=email]::placeholder{
+    color: hsl(0, 80%, 86%);
+}
+
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
-body{
-    
-}

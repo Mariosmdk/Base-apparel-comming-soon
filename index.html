@@ -15,20 +15,30 @@
   
 </head>
 <body>
-  <main>
-    <section>
-
-      <h1>We're coming soon</h1>
+  <main role="main">
+    <section class="comming-soon-text">
+      <img id="logo" src="/assets/images/logo.svg" alt="base-apparel-logo">
+      <br>
+      <span>We're</span>
+      <h1> coming soon</h1>
 
       <p>Hello fellow shoppers! We're currently building our new fashion store. 
       Add your email below to stay up-to-date with announcements and our launch deals.
-      </p>
-      <input type="email" placeholder="Email Address" >
-    </section>
-    <section>
-      <img id="img-dt" src="/assets/images/hero-desktop.jpg" alt="comming-soon-image-posing-girl">
-      <!-- <img id="img-mb" src="/assets/images/hero-mobile.jpg" alt="comming-soon-image-posing-girl"> -->
+    </p>
+    <div>
+      <form action="post">
+        <input type="email" placeholder="Email Address">
+        <i id="form-control-icon"><img src="/assets/images/icon-error.svg" alt=""></i>
+        <button type="submit">
+            <img id="submit-arrow" src="/assets/images/icon-arrow.svg" alt="submit-arrow">
+        </button>
+      </form>
+      <p id="form-control-error">Please provide a valid email</p>
       
+    </div>
+  </section>
+  <section class="comming-soon-img">
+
     </section>
   </main>
   <footer>
