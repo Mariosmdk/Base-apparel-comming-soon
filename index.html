@@ -7,7 +7,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
@@ -16,6 +15,7 @@
 </head>
 <body>
   <main role="main">
+    <img id="logo-mb" src="/assets/images/logo.svg" alt="base-apparel-logo">
     <section class="comming-soon-text">
       <img id="logo" src="/assets/images/logo.svg" alt="base-apparel-logo">
       <br>
@@ -26,8 +26,8 @@
       Add your email below to stay up-to-date with announcements and our launch deals.
     </p>
     <div>
-      <form action="post">
-        <input type="email" placeholder="Email Address">
+      <form action="#" name="form" onsubmit="ValidateEmail(form.email)">
+        <input type="text" name="email" id="email" placeholder="Email Address" >
         <i id="form-control-icon"><img src="/assets/images/icon-error.svg" alt=""></i>
         <button type="submit">
             <img id="submit-arrow" src="/assets/images/icon-arrow.svg" alt="submit-arrow">
@@ -36,8 +36,8 @@
       <p id="form-control-error">Please provide a valid email</p>
       
     </div>
-  </section>
-  <section class="comming-soon-img">
+    </section>
+    <section class="comming-soon-img">
 
     </section>
   </main>
